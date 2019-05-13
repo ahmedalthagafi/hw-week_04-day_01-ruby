@@ -27,6 +27,14 @@ upper_case_full_names = []
 
 ### Answer
 
+  full_name = students[0][:first_name].upcase + ' ' + students[0]  [:last_name].upcase  + ' ' +
+  students[1] [:first_name].upcase  + ' ' + students[1]  [:last_name].upcase  + ' ' +
+  students[2] [:first_name].upcase  + ' ' + students[2]  [:last_name].upcase 
+  
+  upper_case_full_names.push(full_name)
+  
+  puts upper_case_full_names
+
 ```rb
 
 [ 'AHMED ALTHAGAFI', 'NORAH ALSHEHRI', 'HANEEN ALGHAMDI' ]
@@ -81,6 +89,13 @@ first_order_for_each_user = []
 ```
 
 ### Answer
+
+first_orders = users[0] [:orders][0] [:description] +
+   ' ' + users[1] [:orders][0] [:description] +
+   ' ' + users[2] [:orders][0] [:description]
+   first_order_for_each_user.push(first_orders)
+
+  puts first_order_for_each_user
 
 ```rb
 
@@ -151,6 +166,25 @@ coffee_average_per_person = []
 ```
 
 ### Answer
+  first_p = {
+      name: people[0][:name],
+      coffee_average: (people[0][:transactions][0][:amount] + people[0][:transactions][2][:amount]) / 2
+  }
+  
+  second_P = {
+    name: people[1] [:name],
+    coffee_average: people[1] [:transactions][2] [:amount] / 1
+}
+third_p = {
+    name: people[2] [:name],
+    coffee_average: (people[2] [:transactions][0] [:amount] + 
+    people[2] [:transactions][1] [:amount] + 
+    people[2] [:transactions][2] [:amount]) / 3 
+}
+
+coffee_average_per_person.push(first_p).push(second_P).push(third_p)
+puts coffee_average_per_person
+
 
 ```rb
 
